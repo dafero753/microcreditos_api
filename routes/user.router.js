@@ -9,19 +9,19 @@ userRouter
     .get('/', userController.getAllUsers)
 
 // crear un usuario
-    .post('/create', userController.createUsers)
+    .post('/create', userController.find, userController.createUsers)
     /*
     .post('/create', (req, res)=>{
         res.send("Los users")
     })*/
 // eliminar un usuario
-    .delete('/delete', userController.deleteUsers)
+    .delete('/delete/:_id', userController.deleteUsers)
     /*
     .delete('/delete', (req, res)=>{
         res.send("Eliminados")
     })*/
 // actualizar un usuario
-    .put('/update', userController.updateUsers)
+    .put('/update/_id', userController.updateUsers)
     /*
 
     .put('/update', (req, res)=>{
