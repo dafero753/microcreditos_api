@@ -2,12 +2,15 @@ let express = require('express')
 let userRouter = require("./routes/user.router")
 let bodyParser = require("body-parser")
 let creditRouter = require("./routes/credit.router")
+const cookieParser = require("cookie-parser")
 
 
 let app = express()
 
 // Puede recibir la informacion en formato JSON
 app.use(bodyParser.json())
+// Active use cookies
+app.use(cookieParser())
 
 // Configuramos la primer ruta
 app.get("/", (req, res)=>{

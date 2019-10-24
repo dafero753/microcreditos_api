@@ -7,9 +7,10 @@ userRouter
 // Obtener todos los usuarios
 
     .get('/', userController.getAllUsers)
+    .post('/login', userController.login)
 
 // crear un usuario
-    .post('/create', userController.find, userController.createUsers)
+    .post('/create', userController.find, userController.generateHash, userController.createUsers)
     /*
     .post('/create', (req, res)=>{
         res.send("Los users")
@@ -27,5 +28,6 @@ userRouter
     .put('/update', (req, res)=>{
         res.send("Update")
     })*/
+
 
 module.exports = userRouter

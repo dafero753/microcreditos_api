@@ -1,0 +1,20 @@
+.card {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+    align-self: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+}
+
+.bg-pink {
+    background-color: rgb(187, 251, 187);
+}
+
+.bg-blue {
+    background-color: whitesmoke;
+}

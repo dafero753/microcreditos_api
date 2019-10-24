@@ -1,0 +1,33 @@
+.formBasicName {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.formBasicId{
+    display: flex;
+    flex-direction: row;
+}
+
+.formBasicPassword{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.initial-form{
+    background-color: #cfcfcf;
+    border-radius: 40px;
+    width: auto;
+    padding: 50px;
+    display: flex;
+    margin-top: 40px;
+    width: 60%;
+}
+
+.mio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -3,8 +3,19 @@ let mongoose = require("mongoose")
 let schema = mongoose.Schema
 
 let userSchema = new schema({
+    usuario: {
+        type: "string",
+    },
     id: {
         type: Number,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
+    },
+    clave: {
+        type: String,
         required: true
     },
     nombre: {

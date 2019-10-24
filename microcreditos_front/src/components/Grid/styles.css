@@ -1,0 +1,10 @@
+.Grid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+
+}

@@ -1,0 +1,16 @@
+.magic-box{
+    border: 1px solid black;
+    padding: 1rem;
+}
+.mensaje_container{
+    background-color: whitesmoke
+}
+
+.bg-red{
+    background-color: pink;
+}
+
+.bg-blue{
+    background-color: royalblue;
+}
+

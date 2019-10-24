@@ -1,0 +1,14 @@
+.box-number{
+    background-color: azure;
+    margin: 25px 0 25px;
+    overflow: hidden;
+    padding: 20px;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    
+}
+
+.random-number{
+    border: 1px solid black;
+}
