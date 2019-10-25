@@ -22,6 +22,28 @@ export default class Home extends React.Component {
         data.eMail = e.target.elements[3].value
         data.password = e.target.elements[4].value
         data.confirmPassword = e.target.elements[5].value
+
+        //Create user in the api
+        const URL = "https://morning-dusk-03146.herokuapp.com/api/users"
+        // Request to create user whit POST method
+
+            fetch(URL, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': "Application/json",
+                    'Access-Control-Alow-Origin': "*",
+                    'charset': 'UTF-8'
+                    
+                }
+            })
+            .then(res => res.json())
+            .then(res => {
+                console.log('Ok', res)
+            })
+            .catch(err => {
+                console.log("err", err)
+            })
         }
         else{
             this.setState({

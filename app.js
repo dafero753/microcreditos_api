@@ -3,9 +3,12 @@ let userRouter = require("./routes/user.router")
 let bodyParser = require("body-parser")
 let creditRouter = require("./routes/credit.router")
 const cookieParser = require("cookie-parser")
+const cors = require('cors')
 
 
 let app = express()
+// Use cors
+app.use(cors())
 
 // Puede recibir la informacion en formato JSON
 app.use(bodyParser.json())
